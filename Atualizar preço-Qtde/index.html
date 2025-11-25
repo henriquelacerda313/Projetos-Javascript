@@ -1,0 +1,20 @@
+<label>Quantidade: </label>
+<input id="quantidade" type="number" min="1" value="1">
+
+<p>Total: <strong id="total">R$ 50</strong> </p>
+
+<script>
+    let precoUnitario = 50;
+
+let inputQuantidade = document.getElementById("quantidade");
+let campoTotal = document.getElementById("total");
+
+inputQuantidade.addEventListener("input", function () {
+  let qtd = Number(inputQuantidade.value);
+  let total = precoUnitario * qtd;
+
+  campoTotal.textContent = "R$ " + total;
+});
+
+
+</script>

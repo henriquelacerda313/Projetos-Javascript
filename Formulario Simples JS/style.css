@@ -1,0 +1,60 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: border 0.3s;
+  }
+
+  form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #4a90e2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #3577c6;
+  }
+
+  #erro {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 16px; /* reserva espaço fixo para não empurrar a tela */
+  }
